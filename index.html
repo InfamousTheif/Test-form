@@ -120,35 +120,23 @@
 
       <!-- Send Message section -->
        <section class="message-section">
+        <form class="contact-form" action="https://api.web3forms.com/submit" method="POST">
 
-          <form class="contact-form" action="https://api.web3forms.com/submit" method="POST">
+          <input type="hidden" name="access_key" value="18dc583c-b393-4ae4-ade1-a57f68edf620">
+          <input type="hidden" name="subject" value="New Contact Form Submission from Web3Forms" />
+          <input type="hidden" name="from_name" value="Test form" />
+          <input class="input-area" type="text" name="a_password" tabindex="-1" autocomplete="off">
+          
+          <h1 class="page-title" style="width: 100%;"> <span>Drop</span> a line</h1>
 
-            <input type="hidden" name="access_key" value="18dc583c-b393-4ae4-ade1-a57f68edf620" />
-            <input type="hidden" name="subject" value="New Contact Form Submission from Web3Forms" />
-            <input type="hidden" name="from_name" value="My Website" />
-            <!-- More custom ization options available in the docs: https://docs.web3forms.com -->
-        
-            <div class="form-group-container">
-              <div class="form-group">
-                <label for="name" class="form-label">Name</label>
-                <input id="name" name="name" class="form-input" placeholder="Your name" type="text" />
-              </div>
-              <div class="form-group">
-                <label for="email" class="form-label">Email</label>
-                <input id="email" name="email" class="form-input" placeholder="Your email" type="email" />
-              </div>
-              <div class="form-group">
-                <label for="phone" class="form-label">Phone</label>
-                <input id="phone" name="phone" class="form-input" placeholder="+1 (234) 56789" type="text" />
-              </div>
-              <div class="form-group">
-                <label for="message" class="form-label">Message</label>
-                <textarea class="form-textarea" id="message" name="message" placeholder="Your message"></textarea>
-              </div>
-            </div>
-            <button class="form-submit" type="submit">Send Message</button>
-          </form>
-         
+          <input id="name" name="name" class="input-box" aria-label="Name" type="text" placeholder="Name" required>
+          <input id="email" name="email" class="input-box" aria-label="Email" type="email" placeholder="Email" required>
+          <input id="phone" name="phone" class="input-box" aria-label="Phone" type="text" placeholder="Phone Number" >
+          <input id="company-name" name="company-name" class="input-box" aria-label="Company Name" type="text" placeholder=" Company Name" >
+          <textarea id="user-message" name="user-message" class="input-box" aria-label="Type your message" type="text" placeholder="Type your message here..."></textarea>
+<!--           <div aria-label="Captcha" class="input-box" id="captcha">Captcha</div> -->
+          <button id="submit-button class="input-box" aria-label="submit button" type="submit"">Submit</button>
+        </form>
        </section>  
 
       <!-- Contact Section -->
