@@ -122,20 +122,22 @@
        <section class="message-section">
          <form class="contact-form" action="https://api.web3forms.com/submit" method="POST">
 
-          <input type="hidden" name="access_key" value="18dc583c-b393-4ae4-ade1-a57f68edf620" />
-          <input type="hidden" name="subject" value="New Contact Form Submission from Web3Forms" />
-          <input type="hidden" name="from_name" value="My Website" />
+          <input type="hidden" name="access_key" value="18dc583c-b393-4ae4-ade1-a57f68edf620" >
+          <input type="hidden" name="subject" value="New Contact Form Submission from Web3Forms" >
+          <input type="hidden" name="from_name" value="My Website" >
           <!-- More custom ization options available in the docs: https://docs.web3forms.com -->
+
+          <input class="input-area" type="text" name="a_password" tabindex="-1" autocomplete="off">
 
           <h1 class="page-title" style="width: 100%;"> <span>Drop</span> a line</h1>            
 
-            <input id="name" name="name" class="input-box" aria-label="Name" placeholder="Your name" type="text" />
+            <input id="name" name="name" class="input-box" aria-label="Name" placeholder="Your name" type="text" autocomplete="on" >
 
-            <input id="email" name="email" class="input-box" aria-label="Email" placeholder="Your email" type="email" />
+            <input id="email" name="email" class="input-box" aria-label="Email" placeholder="Your email" type="email" autocomplete="on" >
 
-            <input id="phone" name="phone" class="input-box" aria-label="Phone No."  placeholder="+1 (234) 56789" type="text" />
+            <input id="phone" name="phone" class="input-box" aria-label="Phone No."  placeholder="+1 (234) 56789" type="text" autocomplete="on" >
 
-            <input id="company-name" name="company-name" class="input-box" aria-label="Company Name" placeholder="Your name" type="text" />
+            <input id="company-name" name="company-name" class="input-box" aria-label="Company Name" placeholder="Your name" type="text" autocomplete="on" >
 
             <textarea id="user-message" name="user-message" class="input-box"  aria-label="Your message" placeholder="Type your message here..."></textarea>
 
